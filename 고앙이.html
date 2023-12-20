@@ -218,8 +218,8 @@
 
     /*푸터 css*/
     .footer {
-      width: 80%;
-      margin: auto;
+      width: 101.5%;
+      margin-left: -0.8%;
     }
 
     .footer>div {
@@ -229,6 +229,30 @@
 
     .footer>h2 {
       color: white;
+    }
+
+    .num {
+      /*동영상 가운데 정렬*/
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+    }
+
+    .num>div {
+      /*카드-헤더 간격 조정*/
+      margin: 20px 30px auto 10px;
+    }
+
+    .card-header {
+      /*카드-해더틀 크기조정*/
+      width: 100%;
+      padding-bottom: 5%;
+    }
+
+    .ifr {
+      /*동영상 카드-해더div에 크기 맞춤*/
+      width: 100%;
+      height: 100%;
     }
   </style>
   <script>
@@ -348,28 +372,35 @@
         포식자가 될 자질을 가졌음에도 그저 애완동물로 남아있어 주신 고양님들의 자비에 인간은 항상 감사함을 느끼는 것이 옳다.
       </div>
     </div>
-  </div>
-  <div class="footer">
-    <h2>추천 영상</h2>
-    <div>
-      <h6>추천 영상 url: </h6>
-      <a href="https://youtube.com/shorts/bcT60n_RtkY?si=5N-pnPOvuUeXTf1K">https://youtube.com/shorts/bcT60n_RtkY?si=5N-pnPOvuUeXTf1K
-      </a>
+    <div class="num">
+      <div class="card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">수박 먹는 고양이</div>
+        <iframe class="ifr" src="https://www.youtube.com/embed//bcT60n_RtkY?si=5N-pnPOvuUeXTf1K/embed/" frameborder=0
+          allowfullscreen></iframe>
+      </div>
+      <div class="card border-secondary mb-3" style="max-width: 18rem;">
+        <div class="card-header">마중나가는 고양이</div>
+        <iframe class="ifr" src="https://www.youtube.com/embed/1HTGZ6D0QmM?si=-yhL2uEVxY7aAbsU/embed/" frameborder=0
+          allowfullscreen></iframe>
+      </div>
+      <div class="card border-success mb-3" style="max-width: 18rem;">
+        <div class="card-header">고양이 삼형제</div>
+        <iframe class="ifr" src="https://www.youtube.com/embed/JjVW5ZbwJCo?si=_deRPn_ldcKePA4n/embed/" frameborder=0
+          allowfullscreen></iframe>
+      </div>
     </div>
-    <div>
-      <h6>추천 영상 url: </h6>
-      <a href="https://youtube.com/shorts/1HTGZ6D0QmM?si=-yhL2uEVxY7aAbsU">https://youtube.com/shorts/1HTGZ6D0QmM?si=-yhL2uEVxY7aAbsU
-      </a>
-    </div>
-    <div>
-      <h6>추천 영상 url:</h6>
-      <a href="https://youtube.com/shorts/Qo0me6_yyW0?si=tUkxGvbPA3rlH9u7">https://youtube.com/shorts/Qo0me6_yyW0?si=tUkxGvbPA3rlH9u7
-      </a>
-    </div>
-    <div>
-      <h6>추천 영상 url:</h6>
-      <a href="https://youtube.com/shorts/JjVW5ZbwJCo?si=_deRPn_ldcKePA4n">https://youtube.com/shorts/JjVW5ZbwJCo?si=_deRPn_ldcKePA4n
-      </a>
+    <div class="footer">
+      <h2>참조</h2>
+      <div>
+        <h6>github: </h6>
+        <a href="https://github.com/tangpoo">https://github.com/tangpoo
+        </a>
+      </div>
+      <div>
+        <h6>블로그: </h6>
+        <a href="https://tangpoo.tistory.com/">https://tangpoo.tistory.com/
+        </a>
+      </div>
     </div>
   </div>
 </body>
