@@ -128,7 +128,8 @@
 
         .footer {
             background-color: black;
-            width: 100%;
+            width: 102%;
+            margin-left: -0.9%;;
             height: 200px;
         }
 
@@ -141,11 +142,44 @@
             width: 50px;
             height: 50px
         }
-
-        
     </style>
-    <script>
+    <script type="module">
         // functions
+      // Firebase SDK 라이브러리 가져오기
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+      import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+      import {
+        collection,
+        addDoc,
+      } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+      import { getDocs } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+      // Firebase 구성 정보 설정
+      const firebaseConfig = {
+        apiKey: "AIzaSyCnWzN5W6X8uCEa8kDshO7yFHMmPlyK2Bw",
+        authDomain: "sparta-b8ff7.firebaseapp.com",
+        projectId: "sparta-b8ff7",
+        storageBucket: "sparta-b8ff7.appspot.com",
+        messagingSenderId: "382464668576",
+        appId: "1:382464668576:web:82e59da68a7a5b9aecaac5",
+        measurementId: "G-9S7MFN1FS9",
+      };
+      // Firebase 인스턴스 초기화
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+      // 넣기
+    $("#savebtn").click(async function () {
+        let question = $("#question").val();
+        let name = $("#name").val();
+        let email = $("#email").val();
+    let doc = {
+      'question':question,
+      'name':name,
+      'email':email,
+      };
+    await addDoc(collection(db, "animals"), doc);
+    alert("질문을 넣었습니다");
+    window.location.reload();
+})//
 
 
     </script>
@@ -227,20 +261,20 @@
         <div class="mymain">
             <div class="mymain1">
                 <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"
+                <textarea id="question" class="form-control" id="exampleFormControlTextarea1" rows="8"
                     style="resize: none;width: 100; height: 100%;"></textarea>
             </div>
             <div class="mymain2">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">name</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">
+                    <input id="name" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                    <input id="email" type="email" class="form-control" id="exampleFormControlInput1"
                         placeholder="name@example.com">
                 </div>
-                <button type="button" style="float: right;" class="btn btn-secondary">보내기</button>
+                <button id="savebtn" type="button" style="float: right;" class="btn btn-secondary">보내기</button>
                
             </div>
         </div>
