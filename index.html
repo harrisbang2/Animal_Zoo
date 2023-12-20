@@ -11,7 +11,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 /*mytitle */
-.mytitle {
+        .mytitle {
             width: 700px;
             height: 100px;
             margin:auto;
@@ -32,6 +32,12 @@
              margin : 30px auto 0px auto;
 
         }
+
+        .mycards > img {
+            width : 500px;
+            height: 500px;
+        }
+
         .title {
             /* 최상단 라벨 */
             background-color: green;
@@ -78,13 +84,15 @@
             width: 80%;
             margin: 1% auto 1% auto;
             background-color: none;
+            text-align:  center;
         }
 
         .container {
             background-color: wheat;
             width: 80%;
-            margin: auto;
             height: 1000px;
+            margin: auto;
+           
         }
 
         .mymain {
@@ -104,10 +112,10 @@
 
         .footer {
             background-color: black;
-            width: 100%;
+            width: 80%;
             height: 200px;
+            margin: auto;
         }
-
         .footer>div {
             height: 50px;
         }
@@ -141,11 +149,11 @@
             </div>
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="index.html" class="nav-link px-2 ">홈</a></li>
-                <li><a href="#" class="nav-link px-2">고양이</a></li>
-                <li><a href="template.html" class="nav-link px-2">판다</a></li>
-                <li><a href="#" class="nav-link px-2">볼파이톤</a></li>
-                <li><a href="#" class="nav-link px-2">수리부엉이</a></li>
-            </ul>
+                <li><a href="고양이.html" class="nav-link px-2">고양이</a></li>
+                <li><a href="panda.html" class="nav-link px-2">판다</a></li>
+                <li><a href="ballpython.html" class="nav-link px-2">볼파이톤</a></li>
+                <li><a href="수리부엉이.html" class="nav-link px-2">수리부엉이</a></li>
+              </ul>
         </header>
         <!--인트로-->
         <div class="mytitle">
@@ -156,15 +164,20 @@
           <div class="row row-cols-1 row-cols-md-4 g-4">
               <div class="col">
                   <div class="card h-100">
-                      <img src="https://images.unsplash.com/photo-1446768500601-ac47e5ec3719?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1446&q=80" class="card-img-top" alt="...">
+                    <a href="수리부엉이.html">
+                      <img src="image/공완희(수리부엉이)1.jpg" class="card-img-top" alt="..." style = "height: 200px;">
+                      </a>
                       <div class="card-body">
-                          수리부엉이
+                        수리부엉이
                       </div>
+                      
                   </div>
               </div>
               <div class="col">
                   <div class="card h-100">
-                      <img src="https://images.unsplash.com/photo-1446768500601-ac47e5ec3719?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1446&q=80" class="card-img-top" alt="...">
+                    <a href="ballpython.html">
+                      <img src="image/Ball Python4.jpeg" class="card-img-top" alt="..." style = "height: 200px;">
+                      </a>
                       <div class="card-body">
                         볼파이톤
                       </div>
@@ -173,17 +186,21 @@
               </div>
               <div class="col">
                   <div class="card h-100">
-                      <img src="https://images.unsplash.com/photo-1446768500601-ac47e5ec3719?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1446&q=80" class="card-img-top" alt="...">
+                    <a href="고양이.html">
+                      <img src="image/고양이4.jpg" class="card-img-top" alt="..." style = "height: 200px;">
+                    </a>
                       <div class="card-body">
-                         고양이
+                        고양이
                       </div>
                   </div>
               </div>
               <div class="col">
                   <div class="card h-100">
-                      <img src="https://images.unsplash.com/photo-1446768500601-ac47e5ec3719?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1446&q=80" class="card-img-top" alt="...">
+                    <a href="panda.html">
+                      <img src="image/panda1.jpg" class="card-img-top" alt="..." style = "height: 200px;">
+                    </a>
                       <div class="card-body">
-                         펜더
+                        펜더
                       </div>
                   </div>
               </div>
@@ -203,35 +220,34 @@
               <button type="button" class="btn btn-secondary">Secondary</button>
             </div>
           </div>
-    <!--footer-->
-    <div class="footer">
+  </div>
+      <!--footer-->
+      <div class="footer">
         <div>
-            <a href="https://naver.com">
-                <img src="https://picsum.photos/40" class="img-fluid" alt="...">
+            <a href="https://github.com/karine0908/sparta">
+                <img src="image/완희님.png" class="img-fluid" alt="...">
             </a>
-            <h4 style="color: white;">공완희 : </h4>
-
+            <h4 style="color: white;">공완희 :INTJ(수리부엉이) </h4>
         </div>
         <div>
-            <a href="https://naver.com">
-                <img src="https://picsum.photos/40" class="img-fluid" alt="...">
+            <a href="https://github.com/harrisbang2?tab=repositories">
+                <img src="image/세훈님.png" class="img-fluid" alt="...">
             </a>
-            <h4 style="color: white;">방세훈 : </h4>
+            <h4 style="color: white;">방세훈 :INTJ(고양이) </h4>
         </div>
         <div>
-            <a href="https://naver.com">
-                <img src="https://picsum.photos/40" class="img-fluid" alt="...">
+            <a href="https://tangpoo.tistory.com/">
+                <img src="image/효일.png" class="img-fluid" alt="...">
             </a>
-            <h4 style="color: white;">이효일 : </h4>
+            <h4 style="color: white;">이효일 :INFP(펜더) </h4>
         </div>
         <div>
-            <a href="https://naver.com">
-                <img src="https://picsum.photos/40" class="img-fluid" alt="...">
+            <a href="https://velog.io/@qkrwjdtjqwh">
+                <img src="image/정섭님.png" class="img-fluid" alt="...">
             </a>
-            <h4 style="color: white;">박정섭 : </h4>
+            <h4 style="color: white;">박정섭 :INTP(볼파이톤) </h4>
         </div>
     </div>
-  </div>
 </body>
 
 </html>
