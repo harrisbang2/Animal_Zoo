@@ -18,7 +18,7 @@
     body {     
             background-size: cover;
             background-position: center;
-            background-image: url('image/자연배경.jpeg');
+            background-image: url('image/자연\ 배경.jpeg'); 
         } 
 /*title css*/
 .mytitle {
@@ -213,16 +213,41 @@
     }
     /*푸터 css*/
     
-    .footer{ 
-      width: 80%; 
-      margin:auto; 
-    } 
-    .footer > div{ 
-      color: white; 
-      display: flex; 
-    } 
-    .footer > h2{ 
-      color: white; 
+    .footer {
+      width: 101.5%;
+      margin-left: -0.8%;
+      background-image: url('image/자연배경2.jpeg');
+    }
+
+    .footer>div {
+      display: flex;
+    }
+
+    .footer>h2 {
+      color: black;
+    }
+
+    .num {
+      /*동영상 가운데 정렬*/
+      display: flex;
+      justify-content: center;
+    }
+
+    .num>div {
+      /*카드-헤더 간격 조정*/
+      margin: 20px 30px auto 10px;
+    }
+
+    .card-header {
+      /*카드-해더틀 크기조정*/
+      width: 100%;
+      padding-bottom: 5%;
+    }
+
+    .ifr {
+      /*동영상 카드-해더div에 크기 맞춤*/
+      width: 100%;
+      height: 100%;
     }
   </style>
   <script>
@@ -351,25 +376,35 @@
     </span></p>
     </div>
   </div>
-  
+  <div class="num">
+    <div class="card border-primary mb-3" style="max-width: 18rem;">
+      <div class="card-header">EBS 다큐프라임 - 수리부엉이</div>
+      <iframe class="ifr" src="https://www.youtube.com/embed/_7uBIgliFfQ?si=gsZruwy6ilqhbawV" frameborder=0
+        allowfullscreen></iframe>
+    </div>
+    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+      <div class="card-header">TV 생물도감 - 수리부엉이</div>
+      <iframe class="ifr" src="https://www.youtube.com/embed/2git9DxzT6E?si=8w-7ggHHBLMil_di" frameborder=0
+        allowfullscreen></iframe>
+    </div>
+    <div class="card border-success mb-3" style="max-width: 18rem;">
+      <div class="card-header">TV 동물농장 - 새집주소 까먹은 새끼수리부엉이ㅋㅋ</div>
+      <iframe class="ifr" src="https://www.youtube.com/embed/98f9dJ5LiBY?si=KvtX53ynziuXuvCK" frameborder=0
+        allowfullscreen></iframe>
+    </div>
+  </div>
   
   <div class="footer">
-    <h2>추천 영상</h2>
+    <h2>참조</h2>
     <div>
-      <h6>추천 영상 url : </h6>
-      <a href="https://youtu.be/_7uBIgliFfQ?si=gsZruwy6ilqhbawV"> EBS 다큐프라임 - 밤하늘을 지배하는 최상위 포식자 '수리부엉이'</a>
+      <h6>github: </h6>
+      <a href="https://github.com/karine0908">https://github.com/karine0908
+      </a>
     </div>
     <div>
-      <h6>추천 영상 url : </h6>
-      <a href="https://youtu.be/2git9DxzT6E?si=8w-7ggHHBLMil_di"> TV 생물도감 - 누군가 키우다 버린 하늘 최상위 포식자! 천연기념물 수리부엉이</a>
-    </div>
-    <div>
-      <h6>추천 영상 url : </h6>
-      <a href="https://youtu.be/98f9dJ5LiBY?si=KvtX53ynziuXuvCK"> TV 동물농장 - 어디로 가야하죠 아저씨.. 이사 가는 새집주소 까먹은 새끼수리부엉이ㅋㅋ </a>
-    </div>
-    <div>
-      <h6>추천 영상 url : </h6>
-      <a href="https://youtu.be/RxxeODG2Co4?si=yAcQJEx0-Xh4yMOW"> YTN 사이언스 - 밤의 제왕, 수리부엉이의 모든 것 😎⚡️ [#핫클립]</a>
+      <h6>벨로그: </h6>
+      <a href="https://velog.io/@gstudy0907">https://velog.io/@gstudy0907
+      </a>
     </div>
   </div>
 </body>
